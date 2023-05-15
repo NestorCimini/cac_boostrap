@@ -1,0 +1,455 @@
+html{
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+                        /*-------------------------header------------------------------*/
+
+
+.encabezado {
+    width: 100%;
+    height: 12vh;
+    background-color: #353a40;
+    position: sticky;
+    top:0;
+    z-index: 10;
+}
+
+.encabezado-contenedor{
+    width: 86%;
+    height: 100%;
+}
+
+.contenedor-logo {
+    width: 30%;
+    height: 100%;
+}
+
+
+
+.encabezado-logo {
+    height: 7vh;
+}
+
+.encabezado-titulo{
+    font-size: 1.3rem;
+    font-weight: 400;
+
+}
+
+.navegador{
+    width: 65%;
+}
+
+.item-lista{
+    list-style: none;
+    font-size: 1rem;
+    margin-left: 1.5rem;
+
+}
+
+.item-lista a{
+    color: #93989e;
+}
+
+
+.item-lista:last-child a {
+    color: #2f9645;
+}
+
+
+                        /*-------------------------La conferencia------------------------------*/
+
+
+.banner{
+    width: 100%;
+    height: 84vh;
+    background-image: url("../assets/img/ba1.jpg");
+    margin-bottom: 1rem;
+}
+
+
+.banner-opacidad{
+    background-color: rgba(0, 0, 0, 0.55); 
+    position:absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+} 
+
+
+.banner-contenido{
+    top: 35%;
+    left:52%;
+    padding: 0 10rem 0 2rem;
+    text-align: end;
+}
+
+.banner-titulo {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.banner-texto{
+    font-size: 0.9rem;
+    letter-spacing: 5%;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.btn-success{
+    background-color: #43AB4B;
+}
+
+
+
+                        /*-------------------------Oradores------------------------------*/
+
+.oradores{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenedor-oradores{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.contenedor-titulo{
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.contenedor-titulo h3{
+    font-size: .6rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.contenedor-titulo h3 span{
+    font-size: 1.6rem;
+    font-weight: 600;
+    
+}
+
+.tarjeta{
+    width: 30%;
+    overflow: hidden;
+    border:1px solid #dddddd90;
+    border-radius: 0.2rem;
+}
+
+.tarjeta-img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+.etiqueta{
+    display: inline-block;
+    margin-bottom: .5rem;
+    padding: 3px 5px;
+    border-radius: 0.3em;
+}
+
+.amarilla{
+    background-color: #fdc107;
+}
+
+.celeste{
+    background-color: #17a2b9;
+    color: #fff;
+}
+
+.gris{
+    background-color: #6c767c;
+    color: #fff;
+}
+
+.rojo{
+    background-color: #dc3543;
+    color: #fff;
+}
+
+
+                        /*-------------------------Ubicacion------------------------------*/
+
+.ubicacion{
+    margin-bottom: 2rem;
+}
+
+.contenedor-ubicacion{
+    width: 100%;
+}
+
+.ubicacion-img{
+    width: 50%;
+}
+
+.contenedor-ubicacion > * {
+    border: 2px solid #aaa;
+}
+
+.ubicacion-informacion{
+    background-color: #353a40;
+    color: #f6f9fb;
+    padding: 20px 15px;
+    border-left: none;
+}
+
+.informacion-titulo{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.informacion-parrafo{
+    font-weight: 300;
+    font-size: 0.9rem;
+    line-height: 2;
+    margin-bottom: 1rem;
+}
+
+.ubicacion-boton{
+    padding:.5em;
+    border-radius: .2em;
+    background-color: transparent;
+    border: 1px solid #f6f9fb;
+    color: #f6f9fb;
+}
+
+                        /*-------------------------Enviar------------------------------*/
+
+.formulario{
+    
+    margin-left: auto;
+    margin-right: auto;
+}                        
+.enviar{
+    width: auto;
+    height: 61vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+.contenedor-titulo p{
+    margin-top: .8rem;
+    text-transform: none;
+}
+
+.contenedor-titulo p span{
+    text-decoration: underline dotted;
+}
+
+.input-datos{
+    width: 100%;
+    height: 14%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .8rem;
+}
+
+.input-datos > *{
+    width: 40%;
+    padding-left: 5px;
+}
+
+.area-texto{
+    resize: none;
+    width: 100%;
+    height: 56%;
+    font-size: 1.3rem;
+    padding: 15px;
+    margin-bottom: .3rem;
+}
+
+.recordatorio{
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.boton-enviar{
+    width: 100%;
+    background-color: #96c93c;
+    font-size: 1.3rem;
+    border: none;
+    height: 15%;
+    border-radius: .3rem;
+}
+
+                        /*-------------------------Enviar------------------------------*/
+
+.footer{
+    height: 12vh;
+    background: linear-gradient(90deg, #1c3643 0%, #1e5372 100%);
+}
+
+.footer-contenedor{
+    width: 75%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /* display: flex;
+    justify-content: space-between; */
+    /* align-items: center; */
+}
+
+.footer-contenedor a{
+    text-decoration: none;
+    color: #ddd;
+}
+
+
+
+
+
+
+
+
+/*---------------------------------------Responsive-----------------------------------*/
+
+@media screen and (max-width:992px) {
+    .banner-contenido {
+        left:45%
+    }
+
+    .boton{
+        width: 40%;
+    }
+
+    .enviar{
+        width: 70%;
+        height: 70vh;
+    }
+    
+}
+
+@media screen and (max-width:768px){
+
+    .encabezado{
+        height: auto;
+        padding-bottom: .5rem;
+    }
+
+    .contenedor-logo{
+        margin-bottom: .5rem;
+    }
+
+    .navegador{
+        width: 100%;
+    }
+    .banner-contenido{
+        top:25%;
+    }
+
+    .banner-botones{
+        display: flex;
+        align-items: center;
+        height: 30%;
+        justify-content: space-between;
+    }
+    
+    
+    .footer-contenedor{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:576px){
+
+    .encabezado{
+        position: relative;
+    }
+
+    .contenedor-logo{
+        width:80%;
+        justify-content: center;
+    }
+
+    
+    .item-lista{
+        margin-bottom: 0.3rem;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #93989e;
+    }
+
+    .banner-contenido{
+        background-color: #f6f9fb50;
+        height: auto;
+        padding: 0;
+        top:25%;
+        left: 0;
+        text-align: center;
+    }
+
+    .banner-texto{
+        margin-bottom: 1rem;
+    }
+
+    .banner-botones{
+        height: auto;
+        flex-direction: row;
+        align-content: flex-start;
+        justify-content: space-around;
+    }
+
+
+
+    .tarjeta{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .tarjeta-img{
+        margin-bottom: 0.5rem;
+    }
+
+    .ubicacion-img{
+        width: 100%;
+    }
+
+    .ubicacion-informacion{
+        border: 2px solid #aaa;
+        border-top: none;
+    }
+
+    .input-datos > *{
+        width: 100%;
+        padding-left: 5px;
+    }
+
+    .footer{ 
+        top: 12vh;
+    }
+    .footer-contenedor{
+        width: 100%;
+        flex-wrap: wrap;
+    /*     align-content: space-around;
+        justify-content: center; */
+    }
+
+    .footer-contenedor a{
+        margin-left: 5%;
+    }
+
+    .salto{
+        display: none;
+    }
+}
